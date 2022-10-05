@@ -53,3 +53,22 @@ pérdida de capital: continua.
 horas-semana: continuo.
 país de origen: Estados Unidos, Camboya, Inglaterra, Puerto Rico, Canadá, Alemania, EE.UU. periférico (Guam-USVI-etc), India, Japón, Grecia, Sur, China, Cuba, Irán, Honduras, Filipinas, Italia, Polonia, Jamaica, Vietnam, México, Portugal, Irlanda, Francia, República Dominicana, Laos, Ecuador, Taiwán, Haití, Colombia, Hungría, Guatemala, Nicaragua, Escocia, Tailandia, Yugoslavia, El Salvador, Trinad&Tobago, Perú, Hong, Holanda.
 
+
+CMC:
+Este conjunto de datos es un subconjunto de la Encuesta Nacional de Prevalencia de Anticonceptivos de Indonesia de 1987. Las muestras son mujeres casadas que no estaban embarazadas o no saben si lo estaban en el momento de la entrevista. El problema es predecir la elección del método anticonceptivo actual (no uso, métodos de larga duración o métodos de corta duración) de una mujer en función de sus características demográficas y socioeconómicas.
+
+
+Información de atributos:
+
+1. Edad de la mujer (numérica)
+2. Educación de la esposa (categórica) 1=baja, 2, 3, 4=alta
+3. Educación del marido (categórica) 1=baja, 2, 3, 4=alta
+4. Número de hijos nacidos (numérico)
+5. Religión de la esposa (binario) 0=no islámico, 1=islámico
+6. ¿La esposa trabaja ahora? (binario) 0=Sí, 1=No
+7. Ocupación del marido (categórica) 1, 2, 3, 4
+8. Índice de nivel de vida (categórico) 1=bajo, 2, 3, 4=alto
+9. Exposición a los medios de comunicación (binario) 0=buena, 1=no buena
+10.Método anticonceptivo utilizado (atributo de clase) 1=No uso, 2=Largo plazo, 3=Corto plazo
+
+
