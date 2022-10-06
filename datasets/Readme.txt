@@ -125,3 +125,14 @@ hogares
 ingresos_medios
 valor medio de la vivienda
 proximidad al mar
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+OpenML
+
+Datos comunicados a la policía sobre las circunstancias de los accidentes de tráfico con lesiones personales en Gran Bretaña desde 1979, así como la información sobre el fabricante y el modelo de los vehículos implicados en el respectivo accidente.
+
+Esta versión incluye datos hasta 2015.
+
+from sklearn.datasets import fetch_openml
+dataset = fetch_openml(data_id=42803, as_frame=True)
+df_X = dataset["frame"]
