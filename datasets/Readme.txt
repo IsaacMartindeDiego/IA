@@ -101,3 +101,27 @@ Se han realizado muchos estudios en el pasado sobre los factores que afectan a l
 
 El proyecto se basa en la precisión de los datos. El repositorio de datos del Observatorio Global de la Salud (GHO), dependiente de la Organización Mundial de la Salud (OMS), realiza un seguimiento del estado de salud y de muchos otros factores relacionados con todos los países. El conjunto de datos relacionados con la esperanza de vida y los factores de salud de 193 países se ha recogido del mismo sitio web del repositorio de datos de la OMS y los datos económicos correspondientes se han recogido del sitio web de las Naciones Unidas. Entre todas las categorías de factores relacionados con la salud, sólo se eligieron los factores críticos que son más representativos. Se ha observado que en los últimos 15 años se ha producido un enorme desarrollo en el sector sanitario que ha dado lugar a una mejora de las tasas de mortalidad humana, especialmente en los países en desarrollo, en comparación con los últimos 30 años. Por lo tanto, en este proyecto hemos considerado los datos del año 2000-2015 de 193 países para su posterior análisis. Los archivos de datos individuales se han fusionado en un único conjunto de datos. En la inspección visual inicial de los datos se observaron algunos valores que faltaban. Como los conjuntos de datos eran de la OMS, no encontramos errores evidentes. Los datos que faltaban se trataron en el software R utilizando el comando Missmap. El resultado indicó que la mayoría de los datos que faltaban correspondían a la población, la hepatitis B y el PIB. Los datos que faltaban eran de países menos conocidos como Vanuatu, Tonga, Togo, Cabo Verde, etc. Fue difícil encontrar todos los datos de estos países, por lo que se decidió excluirlos del conjunto de datos del modelo final. El archivo final fusionado (conjunto de datos final) consta de 22 columnas y 2.938 filas, lo que supone 20 variables de predicción. Todas las variables de predicción se dividieron en varias categorías generales: factores relacionados con la inmunización, factores de mortalidad, factores económicos y factores sociales.
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+CALIFORNIA:
+
+import sklearn.datasets
+
+data = sklearn.datasets.fetch_california_housing(return_X_y=False, as_frame=True)
+data = data["frame"]
+print(data)
+
+Este es el conjunto de datos utilizado en el segundo capítulo del reciente libro de Aurélien Géron 'Hands-On Machine learning with Scikit-Learn and TensorFlow'. Sirve como una excelente introducción a la implementación de algoritmos de aprendizaje automático porque requiere una limpieza de datos rudimentaria, tiene una lista de variables fácilmente comprensible y se sitúa en un tamaño óptimo entre ser demasiado juguetón y demasiado engorroso.
+
+Los datos contienen información del censo de California de 1990. Por lo tanto, aunque no pueda ayudar a predecir los precios actuales de la vivienda como el conjunto de datos Zillow Zestimate, proporciona un conjunto de datos introductorio accesible para enseñar a la gente los fundamentos del aprendizaje automático. Los datos se refieren a las casas que se encuentran en un determinado distrito de California y algunas estadísticas resumidas sobre ellas basadas en los datos del censo de 1990. Hay que tener en cuenta que los datos no están depurados, por lo que se requieren algunos pasos de preprocesamiento. Las columnas son las siguientes, sus nombres son bastante autoexplicativos:
+
+longitud
+latitud
+housingmedianage
+total_habitaciones
+total_habitaciones
+población
+hogares
+ingresos_medios
+valor medio de la vivienda
+proximidad al mar
