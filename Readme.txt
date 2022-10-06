@@ -4,7 +4,6 @@ Descripción de las bases de datos:
 Pima: 
 Este conjunto de datos procede del Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales. El objetivo del conjunto de datos es predecir de forma diagnóstica si un paciente tiene o no diabetes, basándose en determinadas mediciones diagnósticas incluidas en el conjunto de datos. La selección de estas instancias de una base de datos más amplia está sujeta a varias restricciones. En particular, todos los pacientes aquí son mujeres de al menos 21 años de edad de origen indio Pima. Los conjuntos de datos constan de varias variables médicas predictoras y una variable objetivo, el resultado. Las variables predictoras incluyen el número de embarazos que ha tenido la paciente, su IMC, su nivel de insulina, su edad, etc.
 
-----------------------------------------------------------------------------------------------------------------------------
 Housing: 
 Cada registro de la base de datos describe un suburbio o ciudad de Boston. Los datos se extrajeron del área estadística metropolitana estándar de Boston (SMSA) en 1970. Los atributos se deﬁnen de la siguiente manera (tomados del Repositorio de Aprendizaje Automático de la UCI):
 
@@ -22,7 +21,6 @@ PTRATIO: ratio alumno-profesor por zona de la ciudad
 MEDV: Valor medio de las viviendas ocupadas por sus propietarios en miles de dólares
 Podemos ver que los atributos de entrada tienen una mezcla de unidades.
 
-----------------------------------------------------------------------------------------------------------------------------
 Wine:
 
 Para cargar este conjunto de datos: 
@@ -31,8 +29,6 @@ wine = datasets.load_wine()
 La descripción puede obtenerse aquí:
 print(wine.DESCR)
 
-
-----------------------------------------------------------------------------------------------------------------------------
 Adult:
 
 La extracción fue realizada por Barry Becker a partir de la base de datos del censo de 1994. Se extrajo un conjunto de registros razonablemente limpios utilizando las siguientes condiciones: ((AAGE>16) && (AGI>100) && (AFNLWGT>1)&& (HRSWK>0)). La tarea de predicción consiste en determinar si una persona gana más de 50.000 dólares al año.
@@ -58,7 +54,6 @@ horas-semana: continuo.
 país de origen: Estados Unidos, Camboya, Inglaterra, Puerto Rico, Canadá, Alemania, EE.UU. periférico (Guam-USVI-etc), India, Japón, Grecia, Sur, China, Cuba, Irán, Honduras, Filipinas, Italia, Polonia, Jamaica, Vietnam, México, Portugal, Irlanda, Francia, República Dominicana, Laos, Ecuador, Taiwán, Haití, Colombia, Hungría, Guatemala, Nicaragua, Escocia, Tailandia, Yugoslavia, El Salvador, Trinad&Tobago, Perú, Hong, Holanda.
 
 
-----------------------------------------------------------------------------------------------------------------------------
 CMC:
 Este conjunto de datos es un subconjunto de la Encuesta Nacional de Prevalencia de Anticonceptivos de Indonesia de 1987. Las muestras son mujeres casadas que no estaban embarazadas o no saben si lo estaban en el momento de la entrevista. El problema es predecir la elección del método anticonceptivo actual (no uso, métodos de larga duración o métodos de corta duración) de una mujer en función de sus características demográficas y socioeconómicas.
 
@@ -75,3 +70,5 @@ Información de atributos:
 8. Índice de nivel de vida (categórico) 1=bajo, 2, 3, 4=alto
 9. Exposición a los medios de comunicación (binario) 0=buena, 1=no buena
 10.Método anticonceptivo utilizado (atributo de clase) 1=No uso, 2=Largo plazo, 3=Corto plazo
+
+
